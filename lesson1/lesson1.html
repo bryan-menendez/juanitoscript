@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>AQUI JUANITO EL DE LAS CUERIS REPRESENTANDO A LA NACION</h1>
+    <p>thi is juanitoscript declaring functions</p>
+
+    <script>
+        const square = function (x) {
+            return x * x;
+        };
+
+        console.log(square(35));   
+
+        const hummus = function (factor) {
+            const ingredient = function (amount, unit, name) {
+                let ingredientAmount = amount * factor;
+                if (ingredientAmount > 1) {
+                    unit += "s";
+                }
+                console.log(`${ingredientAmount} ${unit} ${name}`);
+            };
+            ingredient(1, "can", "chickpeas");
+            ingredient(0.25, "cup", "tahini");
+            ingredient(0.25, "cup", "lemon juice");
+            ingredient(1, "clove", "garlic");
+            ingredient(2, "tablespoon", "olive oil");
+            ingredient(0.5, "teaspoon", "cumin");
+        };
+
+        function future() {
+            return "no russian";
+        }
+
+        const power = (base, exponent) => {
+            let result = 1;
+            for (let count = 0; count < exponent; count++) {
+                result *= base;
+            }
+            return result;
+        };
+        const power2 = (base, exponent) => {
+            let result = 1;
+            for (let count = 0; count < exponent; count++) {
+                result *= base;
+            }
+            return result;
+        };
+
+        const square1 = (x) => { return x * x; };
+        const square2 = x => x * x;
+
+        const horn = () => {
+            console.log("Toot");
+        };
+
+        function square3(x) { return x * x; }
+        console.log(square3(4, true, "hedgehog"));
+        // → 16
+
+        function power3(base, exponent = 2) {
+            let result = 1;
+            for (let count = 0; count < exponent; count++) {
+                result *= base;
+            }
+            return result;
+        }
+        console.log(power3(4));
+        // → 16
+        console.log(power3(2, 6));
+        // → 64
+
+        function minimol(x, y)
+        {
+            alert(Math.min(x,y));
+        }
+
+        minimol(3,5);
+
+    </script>
+</body>
+
+</html>
